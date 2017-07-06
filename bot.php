@@ -16,9 +16,21 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			$shutup = false;
+
 			// Build message to reply back
+
+			if ($text == 'shutup') {
+				# code...
+				$shutup = true;
+			}elseif ($text == 'turnon') {
+				# code...
+				$shutup = false;
+			}
 			
-			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
+			if (!($shutup)) {
+				# code...
+				if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
 				$messages = [
 					'type' => 'text',
@@ -42,11 +54,18 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'ไม่บอกอย่าหลอกถาม'
 					];
+
+			}elseif ($text == 'ยุ่ง') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'เป็นสัตว์กินเลือด'
+					];
 			}elseif ($text == 'เปล') {
 				# code...
 				$messages = [
 					'type' => 'text',
-					'text' => 'เรื่องของเรามันจบไปแล้ว อย่ารื้อฟื้นเลยดีกว่า cool มั้ยล่ะไอ้สัส!!'
+					'text' => 'เรื่องของเรามันจบไปแล้ว อย่ารื้อฟื้นเลยดีกว่า'
 					];
 			}elseif ($text == 'โป' || $text == 'โปลิส' || $text == 'โปลิศ') {
 				# code...
@@ -96,8 +115,21 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'ช่วงนี้เค้าคุยกับน้องพราวอยู่'
 					];
+			}elseif ($text == 'เอ็ม') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'คนเหงา 2017 ผู้ให้กำเนิดผมขึ้นมา ตบมือดิสัสรออะไร !!'
+					];
+			}elseif ($text == 'เติ้ง') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'สิรวิชญ์ตัวปลอม เพื่อนเรียกแล้ว'
+					];
 			}else{
 				
+			}
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
