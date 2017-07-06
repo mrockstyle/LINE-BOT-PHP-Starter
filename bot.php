@@ -42,6 +42,24 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'ไม่บอกอย่าหลอกถาม'
 					];
+			}elseif ($text == 'เปล') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'เรื่องของเรามันจบไปแล้ว อย่ารื้อฟื้นเลยดีกว่า cool มั้ยล่ะไอ้สัส!!'
+					];
+			}elseif ($text == 'โป' || $text == 'โปลิส' || $text == 'โปลิศ') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'หรือเรียกอีกชื่อว่าโย'
+					];
+			}elseif ($text == 'โด' || $text == 'โดนัท') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'เพื่อนเรียกอ่ะไม่ได้ยินหรอ'
+					];
 			}else{
 				
 			}
