@@ -30,6 +30,12 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'ขอโทดได้เป่าาา'
 					];
+			}elseif ($text == 'ใครวะ' || $text == 'ใคร' || $text == 'ใครอะ' || $text == 'ใครอ่ะ') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'ไม่บอกอย่าหลอกถาม'
+					];
 			}else{
 				$messages = [
 					'type' => 'text',
