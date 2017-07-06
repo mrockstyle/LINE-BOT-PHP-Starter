@@ -24,6 +24,12 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'สวัสดีครับผมมม'
 					];
+			}elseif ($text == 'ดี') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'ดีควยไรอ่ะ'
+					];
 			}elseif ($text == 'โง่') {
 				# code...
 				$messages = [
