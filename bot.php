@@ -28,7 +28,7 @@ if (!is_null($events['events'])) {
 				# code...
 				$messages = [
 					'type' => 'text',
-					'text' => 'ดีควยไรอ่ะ'
+					'text' => 'good'
 					];
 			}elseif ($text == 'โง่') {
 				# code...
@@ -58,7 +58,7 @@ if (!is_null($events['events'])) {
 				# code...
 				$messages = [
 					'type' => 'text',
-					'text' => 'เพื่อนเรียกอ่ะไม่ได้ยินหรอ'
+					'text' => 'หรือเรียกเค้าว่าโดจิโรเบ้ก็ได้'
 					];
 			}elseif ($text == 'เต้ย') {
 				# code...
@@ -71,6 +71,30 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'text',
 					'text' => 'เห้ อีลิงโง่ เพื่อนเรียกแล้ว'
+					];
+			}elseif ($text == 'กานติ') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'ตอนนี้อยู่อังกฤษกินขนมจนอ้วนไปแล้ว'
+					];
+			}elseif ($text == 'ส้ม') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'ไอ้ส้มมมมมม เพื่อนเรียกแล้วชิบหายยยย ตอบดิ'
+					];
+			}elseif ($text == 'เพียช' || $text == 'เพียส') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => '1 ในแก๊งเสียงใสที่เพื่อนๆถามหา'
+					];
+			}elseif ($text == 'นรา' || $text == 'นราธิป') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'ช่วงนี้เค้าคุยกับน้องพราวอยู่'
 					];
 			}else{
 				
