@@ -26,6 +26,14 @@ if (!is_null($events['events'])) {
 					'text' => 'สวัสดีครับผมมม'
 					];
 					break;
+
+				case 'ง่วง':
+					# code...
+					$messages = [
+					'type' => 'text',
+					'text' => 'นอนดิสัส'
+					];
+					break;
 				
 				default:
 					# code...
