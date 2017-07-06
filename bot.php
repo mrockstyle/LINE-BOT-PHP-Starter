@@ -18,31 +18,25 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			
-			switch ($text) {
-				case ('สวัสดี' || 'หวัดดี'):
-					# code...
-					$messages = [
+			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
+				# code...
+				$messages = [
 					'type' => 'text',
 					'text' => 'สวัสดีครับผมมม'
 					];
-					break;
-
-				case 'ง่วง':
-					# code...
-					$messages = [
+			}elseif ($text == 'โง่') {
+				# code...
+				$messages = [
 					'type' => 'text',
-					'text' => 'นอนดิสัส'
+					'text' => 'ขอโทดได้เป่าาา'
 					];
-					break;
-				
-				default:
-					# code...
-					$messages = [
+			}else{
+				$messages = [
 					'type' => 'text',
-					'text' => 'hello'
+					'text' => 'เอ็มอีกคนนึงยังไม่สอนคำนี้เราง่า อ่านไม่ออก'
 					];
-					break;
 			}
+
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
