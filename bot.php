@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			
 			switch ($text) {
-				case 'สวัสดี'||'หวัดดี':
+				case ('สวัสดี'||'หวัดดี'):
 					$messages = [
 				'type' => 'text',
 				'text' => 'สวัสดีครับ'
