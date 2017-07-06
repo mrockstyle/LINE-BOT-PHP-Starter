@@ -18,17 +18,8 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 
-			if ($text == 'shutup') {
-				# code...
-				$shutup = 1;
-			}elseif ($text == 'turnon') {
-				# code...
-				$shutup = 0;
-			}
 			
-			if ($shutup == 0) {
-				# code...
-				if ($text == 'สวัสดี' || $text == 'หวัดดี') {
+			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
 				$messages = [
 					'type' => 'text',
@@ -127,7 +118,6 @@ if (!is_null($events['events'])) {
 					];
 			}else{
 				
-			}
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
