@@ -60,6 +60,22 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'เพื่อนเรียกอ่ะไม่ได้ยินหรอ'
 					];
+			}elseif ($text == 'เต้ย') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'โนบิตะะะะ (เสียงแม่โนบิตะในการ์ตูน)'
+					];
+			}elseif ($text == 'เอฟ') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'เห้ อีลิงโง่ เพื่อนเรียกแล้ว'
+					],
+					[
+						'type' => 'text',
+						'text' => 'หูหนวกแน่ๆ'
+					];
 			}else{
 				
 			}
