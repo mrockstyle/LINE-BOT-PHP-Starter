@@ -24,7 +24,8 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'text',
 					'text' => 'สวัสดีครับผมมม'
-					'text' => 'ชื่ออะไรครับ'
+					'type' => 'text',
+					'text' => 'hello'
 					];
 			}elseif ($text == 'ดี') {
 				# code...
