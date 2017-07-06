@@ -71,10 +71,6 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'text',
 					'text' => 'เห้ อีลิงโง่ เพื่อนเรียกแล้ว'
-					],
-					[
-						'type' => 'text',
-						'text' => 'หูหนวกแน่ๆ'
 					];
 			}else{
 				
