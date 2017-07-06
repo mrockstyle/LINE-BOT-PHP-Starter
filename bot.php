@@ -37,10 +37,7 @@ if (!is_null($events['events'])) {
 					'text' => 'ไม่บอกอย่าหลอกถาม'
 					];
 			}else{
-				$messages = [
-					'type' => 'text',
-					'text' => 'เอ็มอีกคนนึงยังไม่สอนคำนี้เราง่า อ่านไม่ออก'
-					];
+				
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
