@@ -18,42 +18,23 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			
-			switch ($text) {
-				case 'สวัสดี':
-					$messages = [
+			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
+				# code...
+				$messages = [
 					'type' => 'text',
 					'text' => 'สวัสดีครับ'
 			    	];
-					break;
-
-				case 'หวัดดี':
-					$messages = [
+			}elseif ($text == 'กินข้าวยัง') {
+				# code...
+				$messages = [
 					'type' => 'text',
 					'text' => 'สวัสดีครับ'
 			    	];
-					break;
-
-				case 'วัดดี':
-					$messages = [
+			}else{
+				$messages = [
 					'type' => 'text',
-					'text' => 'สวัสดีครับ'
+					'text' => 'เรายังไม่รู้จักคำนี้อ่าา'
 			    	];
-					break;
-
-				case 'กินข้าวยัง':
-					$messages = [
-					'type' => 'text',
-					'text' => 'ยังเลยยยย'
-			    	];
-					break;
-				
-				default:
-					# code...
-					$messages = [
-				    'type' => 'text',
-				    'text' => 'hello'
-			        ];
-					break;
 			}
 
 
