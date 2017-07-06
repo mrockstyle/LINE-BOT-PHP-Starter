@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 				$shutup = false;
 			}
 			
-			if (!($shutup)) {
+			if ($shutup = false) {
 				# code...
 				if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
