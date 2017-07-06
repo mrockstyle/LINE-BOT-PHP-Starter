@@ -17,20 +17,9 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			/*if ($text == 'สวัสดี') {
-				$messages = [
-				'type' => 'text',
-				'text' => 'สวัสดีครับ'
-			];
-			}else{
-				$messages = [
-				'type' => 'text',
-				'text' => 'hello'
-			];
-			}*/
-
+			
 			switch ($text) {
-				case 'สวัสดี':
+				case ('สวัสดี' || 'หวัดดี'):
 					# code...
 					$messages = [
 					'type' => 'text',
