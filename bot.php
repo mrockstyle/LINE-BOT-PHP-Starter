@@ -8,9 +8,9 @@ $events = json_decode($content, true);
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
+	$shutup = 0;
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
-		$shutup = false;
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
@@ -21,13 +21,13 @@ if (!is_null($events['events'])) {
 
 			if ($text == 'shutup') {
 				# code...
-				$shutup = true;
+				$shutup = 1;
 			}elseif ($text == 'turnon') {
 				# code...
-				$shutup = false;
+				$shutup = 0;
 			}
 			
-			if ($shutup = false) {
+			if ($shutup == 0) {
 				# code...
 				if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
