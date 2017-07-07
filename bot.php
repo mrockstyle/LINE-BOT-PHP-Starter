@@ -31,6 +31,12 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'good'
 					];
+			}elseif ($text == 'ลาเต้') {
+				# code...
+				$messages = [
+					'type' => 'text',
+					'text' => 'เรียกเราหรืออยากกินกาแฟลาเต้ โฮ่ง'
+					];
 			}elseif ($text == 'ใช่มั้ยลาเต้') {
 				# code...
 				$messages = [
