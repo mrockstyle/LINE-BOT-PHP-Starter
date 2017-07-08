@@ -21,14 +21,9 @@ if (!is_null($events['events'])) {
 			
 			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
-				$messages = [{
-						'type' => 'text',
-						'text' => 'สวัสดีครับผมมม'
-					},
-					{
-						'type' => 'text',
-						'text' => 'สวัสดีจ้า'
-					}
+				$messages = [
+					'type' => 'text',
+					'text' => 'สวัสดีครับผมมม'
 					];
 			}elseif ($text == 'ดี') {
 				# code...
