@@ -60,7 +60,7 @@ if (!is_null($events['events'])) {
 				# code...
 				$messages = [
 					'type' => 'text',
-					'text' => 'เรื่องของเรามันจบไปแล้ว อย่ารื้อฟื้นเลยดีกว่า'
+					'text' => 'อย่าตอกย้ำเจ้านายผมนะ :('
 					];
 			}elseif ($text == 'โป' || $text == 'โปลิส' || $text == 'โปลิศ') {
 				# code...
