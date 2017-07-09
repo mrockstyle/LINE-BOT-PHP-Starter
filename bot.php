@@ -22,10 +22,7 @@ if (!is_null($events['events'])) {
 			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
 				$a = ['สวัสดีครับผมมมม','สวัสดีจ้า','สวัสดีฮับ'];
-				$messages = [
-					'type' => 'text',
-					'text' => randTest($a)
-					];			
+				$messages = getMessage();		
 			}elseif ($text == 'ดี') {
 				# code...
 				$messages = [
@@ -159,6 +156,13 @@ if (!is_null($events['events'])) {
 			echo $result . "\r\n";
 		}
 	}
+}
+function getMessage($a) {
+		$message = [
+		'type' => 'text',
+		'text' => randTest($a)
+	];
+	return $message;
 }
 function randTest($a) {
 	$ranKey = array_rand($a,1);
