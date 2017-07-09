@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
 				$a = ['สวัสดีครับผมมมม','สวัสดีจ้า','สวัสดีฮับ'];
-				$messages = getMessage();		
+				$messages = getMessage($a);		
 			}elseif ($text == 'ดี') {
 				# code...
 				$messages = [
