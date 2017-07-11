@@ -58,7 +58,6 @@ if (!is_null($events['events'])) {
 				# code...
 				$a = ['ไปด้วยดิ', 'ไปด้วยยยยย', 'go go', 'ไปด้วยได้ป่ะ', 'ไป', 'ถ้าตรงข้ามไป ก็คือมา จะเป็นไปๆมาๆ', 'ที่คล้ายๆบุหรี่'];
 				$messages = getMessage($a);
-			}
 			}elseif ($text == 'เปล') {
 				# code...
 				$messages = [
