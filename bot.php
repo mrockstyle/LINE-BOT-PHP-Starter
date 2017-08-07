@@ -18,11 +18,11 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 
-			
+
 			if ($text == 'สวัสดี' || $text == 'หวัดดี') {
 				# code...
 				$a = ['สวัสดีครับผมมมม','สวัสดีจ้า','สวัสดีฮับ','คอนนิจิวะะะะ~~~', 'สวัสดีชาวโลก', 'ก่อนสวัสดีผม สวัสดีคุณพ่อคุณแม่รึยัง'];
-				$messages = getMessage($a);		
+				$messages = getMessage($a);
 			}elseif ($text == 'ดี') {
 				# code...
 				$messages = [
@@ -40,10 +40,6 @@ if (!is_null($events['events'])) {
 			}elseif ($text == 'อิอิ') {
 				# code...
 				$a = ['อิหน้ามึงดิ', 'อิอิ', 'อิบราฮิมโบวิค อิบราหยิบยาเฮโมวิด', 'อิบราฮัมลินคอร์น', 'อิ.......คิวซังงงงง ค๊าบบบผมมมมม', 'อิอิอิอิอิอิอิ'];
-				$messages = getMessage($a);
-			}elseif ($text == '5+') {
-				# code...
-				$a = ['ทำไมเราขำสั้นจังอ่ะ', 'ขำแบบนี้นึกว่าลิ้นไก่สั้น', 'ขำแบบนี้นี่เอกลักษณ์เค้าแหละ', '5+', '5- ได้เปล่า'];
 				$messages = getMessage($a);
 			}elseif ($text == 'ฮา') {
 				# code...
@@ -137,7 +133,7 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'เชี่ยอ้วน ไม่เคยตอบเพื่อนเลย ฮัลโหล อยู่ในกลุ่มมั้ยมึงอ่ะ'];
 			}else{
-				
+
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
